@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBC5D4-254C-4A57-BB55-FEAB9AC7B05C}|Service\\Services.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\service\\implements\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBC5D4-254C-4A57-BB55-FEAB9AC7B05C}|Service\\Services.csproj|solutionrelative:service\\implements\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\meraki_api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|solutionrelative:meraki_api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\meraki_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|solutionrelative:meraki_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32031FEB-97E1-47AF-B219-D6A2714767B5}|Repositories\\Repositories.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\repositories\\implements\\productcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32031FEB-97E1-47AF-B219-D6A2714767B5}|Repositories\\Repositories.csproj|solutionrelative:repositories\\implements\\productcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBC5D4-254C-4A57-BB55-FEAB9AC7B05C}|Service\\Services.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\service\\implements\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBC5D4-254C-4A57-BB55-FEAB9AC7B05C}|Service\\Services.csproj|solutionrelative:service\\implements\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBC5D4-254C-4A57-BB55-FEAB9AC7B05C}|Service\\Services.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\service\\interfaces\\iproductcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBC5D4-254C-4A57-BB55-FEAB9AC7B05C}|Service\\Services.csproj|solutionrelative:service\\interfaces\\iproductcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\meraki_api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|solutionrelative:meraki_api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\meraki_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|solutionrelative:meraki_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\meraki_api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|solutionrelative:meraki_api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\meraki_api\\meraki_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|solutionrelative:meraki_api\\meraki_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\meraki_api\\meraki_api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D6AFC695-4A96-409B-8BFE-C39B009BADAD}|Meraki_API\\Meraki_API.csproj|solutionrelative:meraki_api\\meraki_api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBC5D4-254C-4A57-BB55-FEAB9AC7B05C}|Service\\Services.csproj|d:\\workspace\\experiential_entrepreneurship_project\\src\\meraki_be\\service\\implements\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBC5D4-254C-4A57-BB55-FEAB9AC7B05C}|Service\\Services.csproj|solutionrelative:service\\implements\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Service\\Implements\\ProductService.cs",
+              "RelativeDocumentMoniker": "Service\\Implements\\ProductService.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Service\\Implements\\ProductService.cs",
+              "RelativeToolTip": "Service\\Implements\\ProductService.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAowLoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:19:44.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Meraki_API\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Meraki_API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwEsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:19:10.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductCategoryRepository.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Repositories\\Implements\\ProductCategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implements\\ProductCategoryRepository.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Repositories\\Implements\\ProductCategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\Implements\\ProductCategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:17:52.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductCategoryService.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Service\\Interfaces\\IProductCategoryService.cs",
+              "RelativeDocumentMoniker": "Service\\Interfaces\\IProductCategoryService.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Service\\Interfaces\\IProductCategoryService.cs",
+              "RelativeToolTip": "Service\\Interfaces\\IProductCategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:17:40.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductCategoryService.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Service\\Implements\\ProductCategoryService.cs",
+              "RelativeDocumentMoniker": "Service\\Implements\\ProductCategoryService.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Service\\Implements\\ProductCategoryService.cs",
+              "RelativeToolTip": "Service\\Implements\\ProductCategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:17:11.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Program.cs",
+              "RelativeDocumentMoniker": "Meraki_API\\Program.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Program.cs",
+              "RelativeToolTip": "Meraki_API\\Program.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T09:07:33.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Meraki_API\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Meraki_API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAYwLQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T08:42:46.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Dockerfile",
+              "RelativeDocumentMoniker": "Meraki_API\\Dockerfile",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Dockerfile",
+              "RelativeToolTip": "Meraki_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-10T08:39:09.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Meraki_API\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Meraki_API\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T08:40:58.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Meraki_API",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Meraki_API.csproj",
+              "RelativeDocumentMoniker": "Meraki_API\\Meraki_API.csproj",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Meraki_API.csproj",
+              "RelativeToolTip": "Meraki_API\\Meraki_API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-10T09:03:50.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Meraki_API.http",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Meraki_API.http",
+              "RelativeDocumentMoniker": "Meraki_API\\Meraki_API.http",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Meraki_API\\Meraki_API.http",
+              "RelativeToolTip": "Meraki_API\\Meraki_API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-10T09:05:58.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Service\\Implements\\OrderService.cs",
+              "RelativeDocumentMoniker": "Service\\Implements\\OrderService.cs",
+              "ToolTip": "D:\\WORKSPACE\\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\\src\\Meraki_BE\\Service\\Implements\\OrderService.cs",
+              "RelativeToolTip": "Service\\Implements\\OrderService.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAMwEsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T08:41:13.994Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 78,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
