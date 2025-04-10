@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "tZEcXYBxbbz1CROmRcpG1Zsw81QJyyR2MIBCIlAjtqM=",
+  "Source": "Meraki_API",
+  "BasePath": "_content/Meraki_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

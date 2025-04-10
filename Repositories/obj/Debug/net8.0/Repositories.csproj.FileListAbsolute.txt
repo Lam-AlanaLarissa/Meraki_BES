@@ -1,0 +1,17 @@
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\bin\Debug\net8.0\appsettings.Development.json
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\bin\Debug\net8.0\Repositories.runtimeconfig.json
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\Repositories.genruntimeconfig.cache
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+D:\WORKSPACE\EXPERIENTIAL_ENTREPRENEURSHIP_PROJECT\SOURCE_CODE\Backend\Meraki_BE\Repositories\bin\Debug\net8.0\appsettings.json
