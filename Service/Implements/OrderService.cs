@@ -41,121 +41,27 @@ namespace Services.Implements
             return newOrderId;
         }
 
-        //public async Task<dynamic> CreateAnOrderFromCartAsync(OrderDetailDTO orderDTO)
+        //public async Task<dynamic> CreateAnDepositOrderAsync(Order order)
         //{
-        //    var accountEmail = TokenDecoder.GetEmailFromToken(orderDTO.OrderId);
-        //    var acc = await _accountRepository.GetAccountByEmailAsync(accountEmail);
-        //    if (acc == null)
+        //    var account = await _accountRepository.GetAccountByEmailAsync(order.Account1Id);
+        //    if (account == null)
         //    {
         //        return "Cannot find your account";
         //    }
-
-        //    double totalAmount = 0;
-
-        //    foreach (var item in orderDTO)
-        //    {
-
-        //        if (item.AccountId != acc.AccountId)
-        //        {
-        //            return new
-        //            {
-        //                StatusCode = 403,
-        //                Message = $"This cart {item.OrderDetailId} is not belong to your account"
-        //            };
-        //        }
-        //        totalAmount += item.PaidPrice; // Assuming you have Price and Quantity fields in the CartItem model
-        //        var product = await _productRepository.GetProductByProductIdAsync(item.ProductId);
-        //        if (product == null)
-        //        {
-        //            return "product cannot be found";
-        //        }
-        //        product.Quantity = product.Quantity - item.Quantity;
-        //        var sellerId = product.AccountId;
-        //    }
-        //    if (cartItems.Count == 0)
-        //    {
-        //        return new
-        //        {
-        //            Message = "Cart Items is not exist",
-        //            StatusCode = 404
-        //        };
-        //    }
-        //    else
-        //    {
-        //        var newOrder = new Order
-        //        {
-        //            OrderId = await AutoGenerateOrderId(),
-        //            AccountId = acc.AccountId,
-        //            SellerId = null,
-        //            Detail = $"Total of product in order is {cartItems.Count}",
-        //            Status = 1, // 1. Confirming order - 4. Delivering - 5. Shipped successfully
-        //            PaymentStatus = 0, // 0. Paying 1.Paid
-        //            TotalMoney = totalAmount,
-        //            Date = DateOnly.FromDateTime(DateTime.Now),
-        //            FullName = acc.FullName,
-        //            Address = acc.Address,
-        //            PhoneNumber = acc.Phone,
-        //            OrderDetails = cartItems
-        //        };
-        //        await _orderRepository.CreateOrder(newOrder);
-        //        // Detach the tracked cartItems to prevent conflicts
-        //        foreach (var item in cartItems)
-        //        {
-        //            _context.Entry(item).State = EntityState.Detached;
-        //        }
-
-        //        var orderDetails = cartItems.Select(ci => new OrderDetail
-        //        {
-        //            OrderDetailId = ci.OrderDetailId,
-        //            OrderId = newOrder.OrderId,
-        //            ProductId = ci.ProductId,
-        //            Quantity = ci.Quantity,
-        //            PaidPrice = ci.PaidPrice,
-        //            OrderNumber = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 10).ToUpper(),
-        //            AccountId = newOrder.AccountId,
-        //        }).ToList();
-        //        await _cartRepository.UpdateOrderDetails(orderDetails);
-        //        return new
-        //        {
-        //            StatusCode = 201,
-        //            Message = "Create Order Successfull",
-        //            NewOrder = new
-        //            {
-        //                newOrder.OrderId,
-        //                newOrder.FullName,
-        //                newOrder.Date,
-        //                newOrder.Status,
-        //                newOrder.TotalMoney,
-        //                newOrder.PaymentStatus,
-        //                newOrder.Address,
-        //                newOrder.PhoneNumber,
-        //                OrderDetails = orderDetails.Select(od => new
-        //                {
-        //                    od.OrderDetailId,
-        //                    od.ProductId,
-        //                    od.Quantity,
-        //                    od.PaidPrice,
-        //                    od.OrderNumber,
-        //                    od.AccountId,
-        //                })
-        //            },
-
-        //        };
-        //    }
-
+        //    order.OrderId = await AutoGenerateOrderId();
+        //    order.Status = 1;
+        //    order.PaymentStatus = 0;
+        //    order.OrderDate = DateOnly.FromDateTime(DateTime.Now);
+        //    order.Account1Id = null;
+        //    var newOrder = await _orderRepository.CreateOrder(order);
+        //    return newOrder;
         //}
+
         public async Task<double> RetrieveTotalMoneyByOrderId(string orderId)
         {
             return await _orderRepository.GetTotalMoneyOfOrder(orderId);
         }
-        //public async Task CheckoutRequest(CheckoutRequest request)
-        //{
-        //    var order = await _orderRepository.GetOrderById(request.OrderId);
-        //    order.PhoneNumber = request.PhoneNumber;
-        //    order.FullName = request.FullName;
-        //    order.Address = request.Address;
-        //    await _orderRepository.UpdateOrder(order);
-        //}
+
 
         public async Task FinishDeliveringStage(string orderId)
         {
@@ -168,11 +74,11 @@ namespace Services.Implements
         public async Task<List<Order>> GetAllOrders() => await _orderRepository.GetAllOrders();
         public async Task<int> GetNumberOfOrders() => await _orderRepository.GetNumberOfOrders();
         public async Task<int> GetNumberOfOrderBasedOnStatus(int status) => await _orderRepository.GetNumberOfOrderBasedOnStatus(status);
-        public async Task<dynamic> GetNumberOrderOfSellerByStatus(string userEmail, int status)
+        public async Task<dynamic> GetNumberOrderOfCustomerByStatus(string userEmail, int status)
         {
             var account = await _accountRepository.GetAccountByEmailAsync(userEmail);
 
-            return await _orderRepository.GetNumberOrderOfSellerByStatus(account.AccountId, status);
+            return await _orderRepository.GetNumberOrderOfCustomerByStatus(account.AccountId, status);
         }
         public async Task<dynamic> GetNumberOrderOfCustomer(string accessToken)
         {
@@ -190,18 +96,132 @@ namespace Services.Implements
             var account = await _accountRepository.GetAccountByEmailAsync(accountEmail);
             return await _orderRepository.GetEarningOnAllOrders(account.AccountId);
         }
-        //public async Task<dynamic> GetOrderDetailsOfCustomer(string sellerId)
-        //{
-        //    return await _orderRepository.getorderdetail(sellerId);
-        //}
-        //public async Task<dynamic> GetOrderDetailsOfBuyer(string userEmail)
-        //{
-        //    var acc = await _accountRepository.GetAccountByEmailAsync(userEmail);
-        //    if (acc == null)
-        //    {
-        //        return "Cannot find your account";
-        //    }
-        //    return await _orderRepository.GetOrderDetailsOfBuyer(acc.AccountId);
-        //}
+
     }
 }
+
+
+//public async Task<dynamic> CreateAnOrderFromCartAsync(OrderDetailDTO orderDTO)
+//{
+//    var accountEmail = TokenDecoder.GetEmailFromToken(orderDTO.OrderId);
+//    var acc = await _accountRepository.GetAccountByEmailAsync(accountEmail);
+//    if (acc == null)
+//    {
+//        return "Cannot find your account";
+//    }
+
+//    double totalAmount = 0;
+
+//    foreach (var item in orderDTO)
+//    {
+
+//        if (item.AccountId != acc.AccountId)
+//        {
+//            return new
+//            {
+//                StatusCode = 403,
+//                Message = $"This cart {item.OrderDetailId} is not belong to your account"
+//            };
+//        }
+//        totalAmount += item.PaidPrice; // Assuming you have Price and quantity fields in the CartItem model
+//        var product = await _productRepository.GetProductByProductIdAsync(item.productId);
+//        if (product == null)
+//        {
+//            return "product cannot be found";
+//        }
+//        product.quantity = product.quantity - item.quantity;
+//        var sellerId = product.AccountId;
+//    }
+//    if (cartItems.Count == 0)
+//    {
+//        return new
+//        {
+//            Message = "Cart Items is not exist",
+//            StatusCode = 404
+//        };
+//    }
+//    else
+//    {
+//        var newOrder = new Order
+//        {
+//            OrderId = await AutoGenerateOrderId(),
+//            AccountId = acc.AccountId,
+//            SellerId = null,
+//            Detail = $"Total of product in order is {cartItems.Count}",
+//            Status = 1, // 1. Confirming order - 4. Delivering - 5. Shipped successfully
+//            PaymentStatus = 0, // 0. Paying 1.Paid
+//            TotalMoney = totalAmount,
+//            Date = DateOnly.FromDateTime(DateTime.Now),
+//            FullName = acc.FullName,
+//            Address = acc.Address,
+//            PhoneNumber = acc.Phone,
+//            OrderDetails = cartItems
+//        };
+//        await _orderRepository.CreateOrder(newOrder);
+//        // Detach the tracked cartItems to prevent conflicts
+//        foreach (var item in cartItems)
+//        {
+//            _context.Entry(item).State = EntityState.Detached;
+//        }
+
+//        var orderDetails = cartItems.Select(ci => new OrderDetail
+//        {
+//            OrderDetailId = ci.OrderDetailId,
+//            OrderId = newOrder.OrderId,
+//            productId = ci.productId,
+//            quantity = ci.quantity,
+//            PaidPrice = ci.PaidPrice,
+//            OrderNumber = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 10).ToUpper(),
+//            AccountId = newOrder.AccountId,
+//        }).ToList();
+//        await _cartRepository.UpdateOrderDetails(orderDetails);
+//        return new
+//        {
+//            StatusCode = 201,
+//            Message = "Create Order Successfull",
+//            NewOrder = new
+//            {
+//                newOrder.OrderId,
+//                newOrder.FullName,
+//                newOrder.Date,
+//                newOrder.Status,
+//                newOrder.TotalMoney,
+//                newOrder.PaymentStatus,
+//                newOrder.Address,
+//                newOrder.PhoneNumber,
+//                OrderDetails = orderDetails.Select(od => new
+//                {
+//                    od.OrderDetailId,
+//                    od.productId,
+//                    od.quantity,
+//                    od.PaidPrice,
+//                    od.OrderNumber,
+//                    od.AccountId,
+//                })
+//            },
+
+//        };
+//    }
+
+//}
+//public async Task CheckoutRequest(CheckoutRequest request)
+//{
+//    var order = await _orderRepository.GetOrderById(request.OrderId);
+//    order.PhoneNumber = request.PhoneNumber;
+//    order.FullName = request.FullName;
+//    order.Address = request.Address;
+//    await _orderRepository.UpdateOrder(order);
+//}
+//public async Task<dynamic> GetOrderDetailsOfCustomer(string sellerId)
+//{
+//    return await _orderRepository.getorderdetail(sellerId);
+//}
+//public async Task<dynamic> GetOrderDetailsOfBuyer(string userEmail)
+//{
+//    var acc = await _accountRepository.GetAccountByEmailAsync(userEmail);
+//    if (acc == null)
+//    {
+//        return "Cannot find your account";
+//    }
+//    return await _orderRepository.GetOrderDetailsOfBuyer(acc.AccountId);
+//}

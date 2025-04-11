@@ -10,9 +10,9 @@ namespace Services.Interfaces
     public interface IPaymentService
     {
 
-        public Task<CreatePaymentResult> CreatePaymentLink(string orderId, string userId);
-        public Task FailedPayment(string transactionId);
-        public Task SuccessPayment(string transactionId);
+        //public Task<CreatePaymentResult> CreatePaymentLink(string orderId, string userId);
+        //public Task FailedPayment(string transactionId);
+        //public Task SuccessPayment(string transactionId);
 
     }
 }

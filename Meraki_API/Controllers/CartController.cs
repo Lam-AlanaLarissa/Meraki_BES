@@ -63,20 +63,17 @@ namespace Meraki_API.Controllers
             {
                 return BadRequest("Cart Item Id is required");
             }
-            var result = await _cartService.UpdateCartAsync(orderDetailId, quantity);
+            var result = await _cartService.UpdateCartItemAsync(orderDetailId, quantity);
             return Ok(result);
         }
 
         [Authorize(Policy = "UserOnly")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("list-cart-items")]
-        public async Task<IActionResult> GetListCartItems(string accessToken)
+        public async Task<IActionResult> GetListCartItems()
         {
-            if (accessToken == null)
-            {
-                return BadRequest("Must fill in all field");
-            }
-            var result = await _cartService.GetCartListAsync(accessToken);
+
+            var result = await _cartService.GetCartListAsync();
             return Ok(result);
         }
 

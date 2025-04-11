@@ -27,7 +27,7 @@ namespace Meraki_API.Controllers
         [Authorize(Policy = "CustomerOnly")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("create-Product")]
-        public async Task<IActionResult> CreateProductAsync(string accessToken, [FromForm] CreateProductDTO newProduct)
+        public async Task<IActionResult> CreateProductAsync(string accessToken, [FromBody] CreateProductDTO newProduct)
         {
             if (!ModelState.IsValid)
             {
@@ -57,7 +57,7 @@ namespace Meraki_API.Controllers
         [Authorize(Policy = "CustomerOnly")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut("update-Product")]
-        public async Task<IActionResult> UpdateProductAsync(string accessToken, [FromForm] UpdateProductDTO updateProduct)
+        public async Task<IActionResult> UpdateProductAsync(string accessToken, string existProductName, [FromForm] UpdateProductDTO updateProduct)
         {
             if (!ModelState.IsValid)
             {
@@ -73,7 +73,7 @@ namespace Meraki_API.Controllers
             {
                 return BadRequest("Please fill all fields to update Product");
             }
-            var result = await _productService.UpdateProduct(accessToken, updateProduct);
+            var result = await _productService.UpdateProduct(accessToken, existProductName, updateProduct);
             if (result == null)
             {
                 return StatusCode(500, new { Message = "Failed to edit the Product." });
@@ -145,7 +145,7 @@ namespace Meraki_API.Controllers
             }
             if (string.IsNullOrEmpty(ProductId))
             {
-                return BadRequest("Need ProductId for getting Product's detail");
+                return BadRequest("Need productId for getting Product's detail");
             }
             var result = await _productService.ViewProductDetailAsync(ProductId);
             return Ok(result);

@@ -10,13 +10,12 @@ namespace Repositories.DTO
 {
     public class AddToCartDTO
     {
-        [Required(ErrorMessage = "AccessToken is required")]
-        public string accessToken { get; set; }
-        [Required(ErrorMessage = "FlowerId is required")]
-        public string FlowerID { get; set; }
 
-        [Required(ErrorMessage = "Quantity is required")]
+        [Required(ErrorMessage = "ProductId is required")]
+        public string productId { get; set; }
+
+        [Required(ErrorMessage = "quantity is required")]
         [DefaultValue(1)]
-        public double Quantity { get; set; }
+        public double? quantity { get; set; }
     }
 }

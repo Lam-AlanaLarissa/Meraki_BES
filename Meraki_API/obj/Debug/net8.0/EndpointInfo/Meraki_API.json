@@ -659,90 +659,6 @@
         }
       }
     },
-    "/api/Payment/create-payment-link": {
-      "get": {
-        "tags": [
-          "Payment"
-        ],
-        "parameters": [
-          {
-            "name": "orderId",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Payment/get-total-money": {
-      "get": {
-        "tags": [
-          "Payment"
-        ],
-        "parameters": [
-          {
-            "name": "orderId",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Payment/success-payment": {
-      "get": {
-        "tags": [
-          "Payment"
-        ],
-        "parameters": [
-          {
-            "name": "transactionId",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Payment/failed-payment": {
-      "get": {
-        "tags": [
-          "Payment"
-        ],
-        "parameters": [
-          {
-            "name": "transactionId",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Product/create-Product": {
       "post": {
         "tags": [
@@ -759,107 +675,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "required": [
-                  "Attachments",
-                  "DamageDetail",
-                  "Discount",
-                  "Location",
-                  "PcateId",
-                  "PercentageOfDamage",
-                  "ProductDesc",
-                  "ProductName",
-                  "ProductPrice",
-                  "PurchaseDate",
-                  "PurchaseType",
-                  "Status"
-                ],
-                "type": "object",
-                "properties": {
-                  "PcateId": {
-                    "type": "string"
-                  },
-                  "ProductName": {
-                    "type": "string"
-                  },
-                  "ProductDesc": {
-                    "type": "string"
-                  },
-                  "ProductPrice": {
-                    "type": "number",
-                    "format": "double"
-                  },
-                  "Discount": {
-                    "type": "number",
-                    "format": "double"
-                  },
-                  "Location": {
-                    "type": "string"
-                  },
-                  "PurchaseType": {
-                    "type": "string"
-                  },
-                  "PurchaseDate": {
-                    "type": "string",
-                    "format": "date"
-                  },
-                  "PercentageOfDamage": {
-                    "type": "number",
-                    "format": "double"
-                  },
-                  "DamageDetail": {
-                    "type": "string"
-                  },
-                  "Attachments": {
-                    "type": "array",
-                    "items": {
-                      "type": "string",
-                      "format": "binary"
-                    }
-                  },
-                  "Status": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "PcateId": {
-                  "style": "form"
-                },
-                "ProductName": {
-                  "style": "form"
-                },
-                "ProductDesc": {
-                  "style": "form"
-                },
-                "ProductPrice": {
-                  "style": "form"
-                },
-                "Discount": {
-                  "style": "form"
-                },
-                "Location": {
-                  "style": "form"
-                },
-                "PurchaseType": {
-                  "style": "form"
-                },
-                "PurchaseDate": {
-                  "style": "form"
-                },
-                "PercentageOfDamage": {
-                  "style": "form"
-                },
-                "DamageDetail": {
-                  "style": "form"
-                },
-                "Attachments": {
-                  "style": "form"
-                },
-                "Status": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/CreateProductDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProductDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProductDTO"
               }
             }
           }
@@ -879,6 +707,13 @@
         "parameters": [
           {
             "name": "accessToken",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "existProductName",
             "in": "query",
             "schema": {
               "type": "string"
@@ -1164,6 +999,77 @@
             "minimum": 1,
             "type": "number",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateProductDTO": {
+        "required": [
+          "attachments",
+          "damageDetail",
+          "discount",
+          "location",
+          "pcateId",
+          "percentageOfDamage",
+          "productDesc",
+          "productName",
+          "productPrice",
+          "purchaseDate",
+          "purchaseType",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "pcateId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "productName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "productDesc": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "productPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "discount": {
+            "type": "number",
+            "format": "double"
+          },
+          "location": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "purchaseType": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "purchaseDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "percentageOfDamage": {
+            "type": "number",
+            "format": "double"
+          },
+          "damageDetail": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "attachments": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "binary"
+            }
+          },
+          "status": {
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false

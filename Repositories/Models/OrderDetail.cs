@@ -20,18 +20,18 @@ namespace Repositories.Models
         
 
         [Required]
-        public decimal Quantity { get; set; }
+        public double? Quantity { get; set; }
 
         [Required]
-        public double PaidPrice { get; set; }
+        public double? PaidPrice { get; set; }
 
         public string? OrderNumber { get; set; }
-
+        public string AccountId { get; set; } = null!;
         // Relationships
         [ForeignKey("OrderId")]
         public virtual Order? Order { get; set; }  // Nullable for barter trades
 
-        [ForeignKey("ProductId")]
+        [ForeignKey("productId")]
         public virtual Product Product { get; set; }
 
     }

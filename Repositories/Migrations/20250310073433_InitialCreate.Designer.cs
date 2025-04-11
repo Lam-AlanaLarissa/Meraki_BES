@@ -187,7 +187,7 @@ namespace Repositories.Migrations
 
             modelBuilder.Entity("Repositories.Models.Product", b =>
                 {
-                    b.Property<string>("ProductId")
+                    b.Property<string>("productId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(255)
                         .IsUnicode(false)
@@ -268,7 +268,7 @@ namespace Repositories.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(255)");
 
-                    b.HasKey("ProductId")
+                    b.HasKey("productId")
                         .HasName("PK__Product__B40CC6EDEFCE57C4");
 
                     b.HasIndex("AccountId");
@@ -323,7 +323,7 @@ namespace Repositories.Migrations
                         .HasDefaultValue("W000000001")
                         .HasColumnName("WishID");
 
-                    b.Property<string>("ProductId")
+                    b.Property<string>("productId")
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(false)

@@ -825,18 +825,18 @@ namespace Repositories.Migrations
                     b.Property<double>("PaidPrice")
                         .HasColumnType("float");
 
-                    b.Property<string>("ProductId")
+                    b.Property<string>("productId")
                         .IsRequired()
                         .HasColumnType("varchar(255)");
 
-                    b.Property<decimal>("Quantity")
+                    b.Property<decimal>("quantity")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("OrderDetailId");
 
                     b.HasIndex("OrderId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("productId");
 
                     b.ToTable("OrderDetails");
                 });
@@ -868,7 +868,7 @@ namespace Repositories.Migrations
 
             modelBuilder.Entity("Repositories.Models.Product", b =>
                 {
-                    b.Property<string>("ProductId")
+                    b.Property<string>("productId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(255)
                         .IsUnicode(false)
@@ -965,7 +965,7 @@ namespace Repositories.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(255)");
 
-                    b.HasKey("ProductId")
+                    b.HasKey("productId")
                         .HasName("PK__Product__B40CC6EDEFCE57C4");
 
                     b.HasIndex("AccountId");
@@ -1289,7 +1289,7 @@ namespace Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductId")
+                    b.Property<string>("productId")
                         .IsRequired()
                         .HasColumnType("varchar(255)");
 
@@ -1297,7 +1297,7 @@ namespace Repositories.Migrations
 
                     b.HasIndex("AccountId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("productId");
 
                     b.ToTable("Reports");
                 });
@@ -1354,7 +1354,7 @@ namespace Repositories.Migrations
                         .HasDefaultValue("W000000001")
                         .HasColumnName("WishID");
 
-                    b.Property<string>("ProductId")
+                    b.Property<string>("productId")
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(false)
@@ -1462,7 +1462,7 @@ namespace Repositories.Migrations
 
                     b.HasOne("Repositories.Models.Product", "Product")
                         .WithMany("OrderDetails")
-                        .HasForeignKey("ProductId")
+                        .HasForeignKey("productId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
@@ -1509,7 +1509,7 @@ namespace Repositories.Migrations
 
                     b.HasOne("Repositories.Models.Product", "Product")
                         .WithMany("Reports")
-                        .HasForeignKey("ProductId")
+                        .HasForeignKey("productId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 

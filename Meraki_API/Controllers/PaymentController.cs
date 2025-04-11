@@ -29,48 +29,48 @@ namespace Meraki_API.Controllers
             _orderRepository = orderRepository;
         }
 
-        [HttpGet("create-payment-link")]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<IActionResult> CreatePaymentLink(string orderId)
-        {
-            var identity = HttpContext.User.Identity as ClaimsIdentity;
-            var userEmail = identity.Claims.FirstOrDefault().Value;
-            var account = await _accountService.GetAccountByEmailAsync(userEmail);
-            if (account == null)
-            {
-                return NotFound();
-            }
-            var paymentLink = await _paymentService.CreatePaymentLink(orderId, account.AccountId);
-            return Ok(paymentLink);
-        }
+        //[HttpGet("create-payment-link")]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        //public async Task<IActionResult> CreatePaymentLink(string orderId)
+        //{
+        //    var identity = HttpContext.User.Identity as ClaimsIdentity;
+        //    var userEmail = identity.Claims.FirstOrDefault().Value;
+        //    var account = await _accountService.GetAccountByEmailAsync(userEmail);
+        //    if (account == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    var paymentLink = await _paymentService.CreatePaymentLink(orderId, account.AccountId);
+        //    return Ok(paymentLink);
+        //}
 
-        [HttpGet("get-total-money")]
-        public async Task<IActionResult> GetTotalMoneyOfOrder(string orderId)
-        {
-            var totalMoney = await _orderRepository.GetTotalMoneyOfOrder(orderId);
-            return Ok(totalMoney);
-        }
+        //[HttpGet("get-total-money")]
+        //public async Task<IActionResult> GetTotalMoneyOfOrder(string orderId)
+        //{
+        //    var totalMoney = await _orderRepository.GetTotalMoneyOfOrder(orderId);
+        //    return Ok(totalMoney);
+        //}
 
-        [HttpGet("success-payment")]
-        public async Task<IActionResult> SuccessPayment(string transactionId)
-        {
-            await _paymentService.SuccessPayment(transactionId);
-            return Ok(new ApiResponse()
-            {
-                StatusCode = 200,
-                Message = "Payment successful! Your order is on the way to deliver!"
-            });
-        }
-        [HttpGet("failed-payment")]
-        public async Task<IActionResult> FailedPayment(string transactionId)
-        {
-            await _paymentService.FailedPayment(transactionId);
-            return Ok(new ApiResponse()
-            {
-                StatusCode = 200,
-                Message = "Payment failed! Please try again!"
-            });
-        }
+        //[HttpGet("success-payment")]
+        //public async Task<IActionResult> SuccessPayment(string transactionId)
+        //{
+        //    await _paymentService.SuccessPayment(transactionId);
+        //    return Ok(new ApiResponse()
+        //    {
+        //        StatusCode = 200,
+        //        Message = "Payment successful! Your order is on the way to deliver!"
+        //    });
+        //}
+        //[HttpGet("failed-payment")]
+        //public async Task<IActionResult> FailedPayment(string transactionId)
+        //{
+        //    await _paymentService.FailedPayment(transactionId);
+        //    return Ok(new ApiResponse()
+        //    {
+        //        StatusCode = 200,
+        //        Message = "Payment failed! Please try again!"
+        //    });
+        //}
 
     }
 }

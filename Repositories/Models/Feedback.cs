@@ -17,7 +17,7 @@ namespace Repositories.Models
         public string Attachment { get; set; }
         public DateTime CreatedDate { get; set; }
         public string IsDeleted { get; set; }
-        [ForeignKey("ProductId")] public string ProductID { get; set; }
+        [ForeignKey("productId")] public string ProductID { get; set; }
         public virtual Product Product { get; set; }
         public bool IsGoodReview { get; set; } = false;
         [ForeignKey("AccountId")] public string AccountId { get; set; }// WHO SENDS FEEDBACK

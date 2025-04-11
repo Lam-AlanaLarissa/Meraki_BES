@@ -394,7 +394,7 @@ namespace Repositories.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_OrderDetails_ProductId",
                 table: "OrderDetails",
-                column: "ProductId");
+                column: "productId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Orders_Account1Id",
@@ -419,7 +419,7 @@ namespace Repositories.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Reports_ProductId",
                 table: "Reports",
-                column: "ProductId");
+                column: "productId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Transactions_DepositId",

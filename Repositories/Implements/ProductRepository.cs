@@ -29,7 +29,7 @@ namespace Repositories.Implements
         }
         public async Task<Product> GetProductByProductNameAsync(string ProductName)
         {
-            return await _context.Products.FirstOrDefaultAsync(f => f.ProductId.Equals(ProductName));
+            return await _context.Products.FirstOrDefaultAsync(f => f.ProductName.Equals(ProductName));
         }
         public async Task<string> GetProductNameByProductId(string ProductId)
         {

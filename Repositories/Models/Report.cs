@@ -16,7 +16,7 @@ namespace Repositories.Models
         public string? Attachment { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
-        [ForeignKey("ProductId")] public string ProductId { get; set; }
+        [ForeignKey("productId")] public string ProductId { get; set; }
         public virtual Product Product { get; set; }
     }
 }

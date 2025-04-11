@@ -391,70 +391,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Meraki_API.Controllers.PaymentController",
-    "Method": "CreatePaymentLink",
-    "RelativePath": "api/Payment/create-payment-link",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderId",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Meraki_API.Controllers.PaymentController",
-    "Method": "FailedPayment",
-    "RelativePath": "api/Payment/failed-payment",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "transactionId",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Meraki_API.Controllers.PaymentController",
-    "Method": "GetTotalMoneyOfOrder",
-    "RelativePath": "api/Payment/get-total-money",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderId",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Meraki_API.Controllers.PaymentController",
-    "Method": "SuccessPayment",
-    "RelativePath": "api/Payment/success-payment",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "transactionId",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Meraki_API.Controllers.ProductController",
     "Method": "CreateProductAsync",
     "RelativePath": "api/Product/create-Product",
@@ -468,64 +404,9 @@
         "IsRequired": false
       },
       {
-        "Name": "PcateId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ProductName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ProductDesc",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ProductPrice",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Discount",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Location",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PurchaseType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PurchaseDate",
-        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "PercentageOfDamage",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "DamageDetail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Attachments",
-        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Status",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "newProduct",
+        "Type": "Repositories.DTO.CreateProductDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -634,6 +515,11 @@
     "Parameters": [
       {
         "Name": "accessToken",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "existProductName",
         "Type": "System.String",
         "IsRequired": false
       },

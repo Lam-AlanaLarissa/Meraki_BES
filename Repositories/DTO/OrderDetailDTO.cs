@@ -15,10 +15,10 @@ namespace Repositories.DTO
         public string ProductName { get; set; } = null!;
 
         public string ProductImage { get; set; } = null!;
-        public decimal Quantity { get; set; }
+        public double? Quantity { get; set; }
 
 
-        public double PaidPrice { get; set; }
+        public double? PaidPrice { get; set; }
 
         public string? OrderNumber { get; set; }
         public string? AccountId { get; set; }

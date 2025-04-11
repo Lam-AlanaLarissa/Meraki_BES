@@ -10,8 +10,8 @@ namespace Services.Interfaces
     public interface ICartService
     {
         public Task<dynamic> AddToCartAsync(AddToCartDTO cartDTO);
+        public Task<dynamic> UpdateCartItemAsync(string cartItemId, double? quantity);
         public Task<dynamic> DeleteCartItemAsync(string cartItemId);
-        public Task<dynamic> UpdateCartAsync(string cartItemId, double quantity);
-        public Task<dynamic> GetCartListAsync(string accessToken);
+        public Task<dynamic> GetCartListAsync();
     }
 }

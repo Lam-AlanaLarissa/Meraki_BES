@@ -20,16 +20,29 @@ namespace Repositories.Interfaces
         public Task<double> GetTotalMoneyOfOrder(string orderId);
 
         public Task<Order> GetOrderById(string orderId);
-        //public Task<Order> GetOrderBySellerIdAsync(string? sellerId);
-
+        public Task<Order> GetOrderByAccountIdAsync(string? accountId);
         public Task<List<Order>> GetAllOrders();
         public Task<int> GetNumberOfOrders();
         public Task<int> GetNumberOfOrderBasedOnStatus(int status);
-        public Task<dynamic> GetNumberOrderOfSellerByStatus(string accountId, int status);
+        public Task<dynamic> GetNumberOrderOfCustomerByStatus(string accountId, int status);
 
         public Task<dynamic> GetNumberOrderOfCustomer(string accessToken);
 
 
         public Task<double> GetEarningOnAllOrders(string accountId);
+
+
+        // OrderDetail
+        public Task<OrderDetail> GetOrderDetailById(string orderDetailId);
+        public Task<List<OrderDetail>> GetOrderDetailsByOrderId(string orderId);
+        public Task<List<OrderDetail>> GetOrderDetailsByProductId(string productId);
+        public Task<string> GetLatestOrderDetailIdAsync();
+        public Task<dynamic> GetOrderDetailsOfCustomer(string accountId);
+        public Task<string> AutoGenerateOrderDetailId();
+        public Task<OrderDetail> CreateOrderDetail(OrderDetail orderDetail);
+        public Task<dynamic> UpdateOrderDetail(OrderDetail orderDetail);
+        public Task<dynamic> DeleteOrderDetail(OrderDetail orderDetail);
+        public Task<OrderDetail> GetCartItemByProductIdAndAccountAsync(string accountId, string productId);
+
     }
 }

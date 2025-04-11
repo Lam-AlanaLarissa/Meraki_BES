@@ -10,7 +10,7 @@ namespace Services.Interfaces
     public interface IProductService
     {
         public Task<dynamic> CreateNewProductAsync(string accessToken, CreateProductDTO newProduct);
-        public Task<dynamic> UpdateProduct(string accessToken, UpdateProductDTO updateProduct);
+        public Task<dynamic> UpdateProduct(string accessToken, string existProductName, UpdateProductDTO updateProduct);
         public Task<dynamic> DeleteAProductAsync(string accessToken, List<string> productIds);
         public Task<dynamic> InactiveAndActiveProductByOwner(string accessToken, string productId);
         public Task<dynamic> ViewProductDetailAsync(string productId);

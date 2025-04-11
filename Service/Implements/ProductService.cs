@@ -97,7 +97,7 @@ namespace Services.Implements
             }
         }
 
-        public async Task<dynamic> UpdateProduct(string accessToken, UpdateProductDTO updateProduct)
+        public async Task<dynamic> UpdateProduct(string accessToken, string existProductName, UpdateProductDTO updateProduct)
         {
             try
             {
@@ -109,7 +109,7 @@ namespace Services.Implements
                     return "Account is not found or invalid token";
                 }
                 // Check the exist of product
-                var product = await _product.GetProductByProductNameAsync(updateProduct.ProductName);
+                var product = await _product.GetProductByProductNameAsync(existProductName);
                 if (product == null)
                 {
                     return "Product is not found";
